@@ -1,0 +1,158 @@
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  position: relative;
+  font-family: 'Source Sans Pro', sans-serif;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 1.2em;
+  line-height: 1.5;
+  margin: 0;
+  padding: 0;
+}
+
+.login-div {
+  margin: 100px auto;
+  width: 350px;
+  padding: 40px;
+  background-color: #21669B;
+  color: white;
+}
+
+.signup-div {
+  margin: 100px auto;
+  width: 450px;
+  padding: 40px;
+  background-color: #21669B;
+  color: white;
+}
+
+.dashboard-manager-emplyee-div {
+  margin: 50px auto;
+  padding: 40px;
+  background-color: #21669B;
+  color: white;
+}
+
+.formularz_logowania_staff, .formularz_rejestracji_staff {
+  width: 100%;
+  margin: auto;
+}
+
+.formularz_logowania_staff input, .menu_pracownika_zaloguj_zarejestruj a, .formularz_rejestracji_staff input, .formularz_rejestracji_staff button {
+  padding-left: 5px;
+  padding-right: 5px;
+  padding-top: 3px;
+  padding-bottom: 3px;
+  /* margin-top: 15px; */
+  /* margin-top: 2px; */
+  /* margin-bottom: 15px; */
+}
+
+.label_dla_pol_rejestracji_staff, .label_dla_pol_logowania_staff {
+  font-size: 0.9em;
+  padding-bottom: 1px;
+  margin-top: 8px;
+}
+
+.pierwszy_input_rejestracji_staff {
+  margin-top: 0px;
+}
+
+.pierwszy_input_logowania_staff {
+  margin-bottom: 0px;
+}
+
+.username input, .fieldWrapper input, .password input {
+  display: block;
+  width: 100%
+}
+
+.go_to_zaloguj_button, .go_to_zarejestruj_butto {
+  width: auto 80%;
+}
+
+.zaloguj_button, .zarejestruj_button, .go_to_zaloguj_button, .go_to_zarejestruj_butto {
+  text-align: center;
+}
+
+.zaloguj_button input, .zarejestruj_button button, .menu_pracownika_zaloguj_zarejestruj a {
+  padding-top: 5px;
+  padding-bottom: 5px;
+  padding-left: 12px;
+  padding-right: 12px;
+  font-size: 1em;
+}
+
+.bez_zawijania {
+  white-space: nowrap;
+}
+
+.bez_aureoli:focus {
+  outline: 0;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+}
+
+#zalogowanie_staff_button, #zarejestruj_staff_button {
+  background-color: #21669B;
+  border-radius: 0px;
+  border-color: #FFFFFF;
+  margin-top: 15px;
+}
+
+.go_to_zaloguj_button a, .go_to_zarejestruj_butto a {
+  background-color: #21669B;
+  color: #FFFFFF;
+  border: solid 1px;
+  border-radius: 0px;
+  border-color: #FFFFFF;
+  margin-top: 15px;
+}
+
+.logo {
+  text-align: center;
+}
+
+.title {
+  margin-bottom: 8px;
+  font-size: 1.25em;
+}
+
+.title a:link, .title a:visited, .title a:hover, .title a:active {
+  color: #FFFFFF;
+  text-decoration: none;
+}
+
+.go_to_zaloguj_button a:link, .go_to_zaloguj_button a:visited, .go_to_zaloguj_button a:hover, .go_to_zaloguj_button a:active {
+  color: #FFFFFF;
+  background-color: #21669B;
+  text-decoration: none;
+}
+
+.go_to_zarejestruj_butto a:link, .go_to_zarejestruj_butto a:visited, .go_to_zarejestruj_butto a:hover, .go_to_zarejestruj_butto a:active {
+  color: #FFFFFF;
+  background-color: #21669B;
+  text-decoration: none;
+}
+
+.subtitle {
+  margin-bottom: 13px;
+  font-weight: bolder;
+}
+
+.subtitle2 {
+  margin-bottom: 20px;
+  font-weight: bolder;
+}
+
+.errorlist {
+  font-size: 0.9em;
+  background-color: #DC143C;
+  list-style-type: none;
+  margin-top: 5px;
+  margin-bottom: 0px;
+  padding: 1px
+}

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+
+{% extends "rezerwacje/base.html" %}
+
+{% load django_bootstrap5 %}
+
+{% block page_block %}
+
+<div class="login-div position-relative">
+
+  <div class="logo">
+    <div class="title">
+      <a class="" role="button" href="/">
+        <div class="bez_zawijania">Radca Prawny</div>
+        <div class="bez_zawijania">Piotr Janas</div>
+      </a>
+    </div>
+    <div class="subtitle">
+      <div class="bez_zawijania">System do zarządzania</div>
+      <div class="bez_zawijania">terminami porad prawnych</div>
+    </div>
+    <div class="subtitle2">
+      <div class="bez_zawijania">Strefa pracownika</div>
+    </div>
+  </div>
+
+  <div class="menu_pracownika_zaloguj_zarejestruj">
+    <div class="go_to_zaloguj_button">
+      <a id="" class="dropdown-item" href="{% url 'rezerwacje:staff_login' %}">Logowanie pracownika</a>
+    </div>
+    <div class="go_to_zarejestruj_butto">
+      <a id="" class="dropdown-item" href="{% url 'rezerwacje:staff_singup' %}">Rejestracja pracownika</a>
+    </div>
+  </div>
+
+</div>
+
+{% endblock %}

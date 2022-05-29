@@ -1,0 +1,13 @@
+czcionka:
+#F2F2F2
+#21669B
+
+#FFFFFF
+
+tlo:
+#024A81
+#F2F2F2
+
+#4B86B4
+#21669B
+#3F78BF

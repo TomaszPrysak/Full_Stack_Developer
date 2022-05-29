@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+
+{% extends "rezerwacje/base.html" %}
+
+{% load django_bootstrap5 %}
+
+{% block page_block %}
+
+<div class="signup-div position-relative">
+
+  <div class="logo">
+    <div class="title">
+      <a class="" role="button" href="/">
+        <div class="bez_zawijania">Radca Prawny</div>
+        <div class="bez_zawijania">Piotr Janas</div>
+      </a>
+    </div>
+    <div class="subtitle">
+      <div class="bez_zawijania">System do zarządzania</div>
+      <div class="bez_zawijania">terminami porad prawnych</div>
+    </div>
+    <div class="subtitle2">
+      <div class="bez_zawijania">Rejestracja nowego pracownika</div>
+    </div>
+  </div>
+
+  <div class="formularz_rejestracji_staff">
+    <form action="" method="POST">
+      {% csrf_token %}
+      <div class="fieldWrapper">
+          <label class='label_dla_pol_rejestracji_staff pierwszy_input_rejestracji_staff' for="{{ form.username.id_for_label }}">Nazwa użytkownika/Login:</label>
+          {{ form.username }}
+          {{ form.username.errors }}
+      </div>
+      <div class="fieldWrapper">
+          <label class='label_dla_pol_rejestracji_staff' for="{{ form.email.id_for_label }}">E-mail:</label>
+          {{ form.email }}
+          {{ form.email.errors }}
+      </div>
+      <div class="fieldWrapper">
+          <label class='label_dla_pol_rejestracji_staff' for="{{ form.first_name.id_for_label }}">Imię:</label>
+          {{ form.first_name }}
+          {{ form.first_name.errors }}
+      </div>
+      <div class="fieldWrapper">
+          <label class='label_dla_pol_rejestracji_staff' for="{{ form.last_name.id_for_label }}">Nazwisko:</label>
+          {{ form.last_name }}
+          {{ form.last_name.errors }}
+      </div>
+      <div class="fieldWrapper">
+          <label class='label_dla_pol_rejestracji_staff' for="{{ form.phone_number.id_for_label }}">Numer telefonu:</label>
+          {{ form.phone_number }}
+          {{ form.phone_number.errors }}
+      </div>
+      <div class="fieldWrapper">
+          <label class='label_dla_pol_rejestracji_staff' for="{{ form.skype_login.id_for_label }}">Skype login:</label>
+          {{ form.skype_login }}
+          {{ form.skype_login.errors }}
+      </div>
+      <div class="fieldWrapper">
+          <label class='label_dla_pol_rejestracji_staff' for="{{ form.verify_code.id_for_label }}">Kod weryfikacyjny:</label>
+          {{ form.verify_code }}
+          {{ form.verify_code.errors }}
+      </div>
+      <div class="fieldWrapper">
+          <label class='label_dla_pol_rejestracji_staff' for="{{ form.password1.id_for_label }}">Hasło:</label>
+          {{ form.password1 }}
+          {{ form.password1.errors }}
+      </div>
+      <div class="fieldWrapper">
+          <label class='label_dla_pol_rejestracji_staff' for="{{ form.password2.id_for_label }}">Powtórz hasło:</label>
+          {{ form.password2 }}
+          {{ form.password2.errors }}
+      </div>
+
+      <div class="zarejestruj_button">
+        <button id="zarejestruj_staff_button" class="btn btn-primary bez_aureoli" type="submit" class="btn btn-success">Zarejestruj się</button>
+      </div>
+    </form>
+  </div>
+
+</div>
+
+{% endblock %}

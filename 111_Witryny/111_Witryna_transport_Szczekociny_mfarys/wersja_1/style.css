@@ -1,0 +1,33 @@
+h1, h2, h3, h4, h5{
+  font-family: "Times New Roman", Times, serif;
+}
+.card-title{
+  font-weight: bold;
+}
+.adres{
+  margin-bottom: 32px;
+}
+.deklaracje, .deklaracje:hover, .deklaracje:visited, .deklaracje:link, .deklaracje:active{
+  color: white;
+  text-decoration: none;
+}
+.adresmail, .adresmail:hover, .adresmail:visited, .adresmail:link, .adresmail:active{
+  color: blue;
+  text-decoration: underline;
+}
+.podpis{
+  width: 525px;
+}
+.komputer{
+  width: 525px;
+}
+#tlo_z_tirem{
+  background: url(tir.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 450px;
+  weight: 970px;
+}
+#wiersz_tlo_z_tirem{
+  height: 450px;
+}

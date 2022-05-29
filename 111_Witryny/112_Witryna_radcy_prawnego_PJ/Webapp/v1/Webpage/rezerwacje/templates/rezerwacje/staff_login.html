@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+
+{% extends "rezerwacje/base.html" %}
+
+{% load django_bootstrap5 %}
+
+{% block page_block %}
+
+<div class="login-div position-relative">
+
+  <div class="logo">
+    <div class="title">
+      <a class="" role="button" href="/">
+        <div class="bez_zawijania">Radca Prawny</div>
+        <div class="bez_zawijania">Piotr Janas</div>
+      </a>
+    </div>
+    <div class="subtitle">
+      <div class="bez_zawijania">System do zarządzania</div>
+      <div class="bez_zawijania">terminami porad prawnych</div>
+    </div>
+    <div class="subtitle2">
+      <div class="bez_zawijania">Logowanie pracownika</div>
+    </div>
+  </div>
+
+  <div class="formularz_logowania_staff">
+    <form action="" method="POST">
+      {% csrf_token %}
+      <div class="username">
+        <label class='label_dla_pol_logowania_staff' for="usermame_login_staff">Nazwa użytkownika/Login</label>
+        <input id='usermame_login_staff' class='pierwszy_input_logowania_staff' type="text" name="username" placeholder="Nazwa użytkownika/Login">
+        {% if validate_status == 0 %}
+        <ul class='errorlist'>
+          <li>Błędna Nazwa użytkownika/Login lub Hasło</li>
+        </ul>
+        {% elif validate_status == 1 %}
+          <ul class='errorlist'>
+            <li>Twoje konto użytkownika zostało zawieszone. Skontaktuj się z pracodawcą</li>
+          </ul>
+        {% endif %}
+      </div>
+      <div class="password">
+        <label class='label_dla_pol_logowania_staff' for="password_login_staff">Hasło</label>
+        <input id='password_login_staff' type="password" name="password" placeholder="Hasło">
+        {% if validate_status == 0 %}
+        <ul class='errorlist'>
+          <li>Błędna Nazwa użytkownika/Login lub Hasło</li>
+        </ul>
+        {% elif validate_status == 1 %}
+          <ul class='errorlist'>
+            <li>Twoje konto użytkownika zostało zawieszone. Skontaktuj się z pracodawcą</li>
+          </ul>
+        {% endif %}
+      </div>
+      </div>
+      <div class="zaloguj_button">
+        <input id="zalogowanie_staff_button" class="btn btn-primary bez_aureoli"  type="submit" name="zalogujAdmin" value="Zaloguj się">
+      </div>
+    </form>
+  </div>
+
+</div>
+
+{% endblock %}

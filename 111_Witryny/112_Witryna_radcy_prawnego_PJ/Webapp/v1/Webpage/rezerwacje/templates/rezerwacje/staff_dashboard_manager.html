@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+
+{% extends "rezerwacje/base.html" %}
+
+{% load django_bootstrap5 %}
+
+{% block page_block %}
+
+<div class="dashboard-manager-emplyee-div position-relative">
+
+  <h3>Poprawnie się zalogowałeś!</h3>
+  <h3>jestes pracownikeim zwykłym {{ user.is_employee}}</h3>
+  <h3>jestes managerem {{ user.is_manager}}</h3>
+  <h3>jestes klientem {{ user.is_client}}</h3>
+
+</div>
+
+{% endblock %}
